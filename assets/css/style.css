@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 .page-comecloser {
-  font-family: "Noto Sans TC", serif;
+  font-family: "Noto Sans TC", sans-serif;
 }
 @media screen and (max-width: 599px) {
   .page-comecloser {
