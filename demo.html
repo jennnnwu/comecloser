@@ -1128,7 +1128,10 @@
 <script type="text/javascript">
     $(function () {
         AOS.init({
-            offset: (jQuery(window).height() * .25)
+            offset: (jQuery(window).height() * .25),
+            duration: 700,
+            easing: 'ease-out',
+            anchorPlacement: 'bottom-center'
         });
     });
     
