@@ -815,15 +815,15 @@
         <h1 class="kv">
             蕾黛絲靠過來內衣
             <div class="kv-font" data-aos="zoom-in-left" data-aos-delay="300">
-                <img src="/assets/images/KV_font.png" alt="吳姍儒 蕾黛絲靠過來內衣 內衣推薦">
+                <img src="assets/images/KV_font.png" alt="吳姍儒 蕾黛絲靠過來內衣 內衣推薦">
             </div>
-            <img src="/assets/images/KV.png" alt="吳姍儒 蕾黛絲靠過來內衣 內衣推薦">
+            <img src="assets/images/KV.png" alt="吳姍儒 蕾黛絲靠過來內衣 內衣推薦">
         </h1>
         <h1 class="kv-mobile">
             <div class="kv-font" data-aos="zoom-in-left" data-aos-delay="300">
-                <img src="/assets/images/m/KV_font.png" alt="吳姍儒 蕾黛絲靠過來內衣 內衣推薦">
+                <img src="assets/images/m/KV_font.png" alt="吳姍儒 蕾黛絲靠過來內衣 內衣推薦">
             </div>
-            <img src="/assets/images/m/KV.png" alt="吳姍儒 蕾黛絲靠過來內衣 內衣推薦">
+            <img src="assets/images/m/KV.png" alt="吳姍儒 蕾黛絲靠過來內衣 內衣推薦">
         </h1>
         <div class="container">
             <section class="video-section">
@@ -897,16 +897,16 @@
                     </ul>
                 </div>
                 <ul class="patent-slider-list owl-carousel owl-theme">
-                    <li class="patent-slider-list-item">
+                    <li class="patent-slider-list-item go-patent-1">
                         <img src="assets/images/patent1.jpg" alt="蘋果肌襯墊 上胸澎澎">
                     </li>
-                    <li class="patent-slider-list-item">
+                    <li class="patent-slider-list-item go-patent-2">
                         <img src="assets/images/patent2.jpg" alt="轉彎鋼圈 角度更服貼">
                     </li>
-                    <li class="patent-slider-list-item">
+                    <li class="patent-slider-list-item go-patent-3">
                         <img src="assets/images/patent3.jpg" alt="雙層側包 副乳完全收服">
                     </li>
-                    <li class="patent-slider-list-item">
+                    <li class="patent-slider-list-item go-patent-4">
                         <img src="assets/images/patent4.jpg" alt="顯瘦雙背片 美背達人">
                     </li>
                 </ul>
@@ -1127,7 +1127,9 @@
 <script src="assets/js/aos.js"></script>
 <script type="text/javascript">
     $(function () {
-        AOS.init();
+        AOS.init({
+            offset: (jQuery(window).height() * .25)
+        });
     });
     
     $('.feature-slider-list').owlCarousel({
@@ -1192,6 +1194,18 @@
         if($(window).width() < 600 && itemNo < 4){
             $('.patent-nav-wrap').scrollLeft( (itemNo - 1) * 230 );
         }
+    });
+    $(".go-patent-1").on("click", function(){
+        $(window).scrollTo($(".patent-1-wrap"), 800 , {offset:-50});
+    });
+    $(".go-patent-2").on("click", function(){
+        $(window).scrollTo($(".patent-2-wrap"), 800 , {offset:-50});
+    });
+    $(".go-patent-3").on("click", function(){
+        $(window).scrollTo($(".patent-3-wrap"), 800 , {offset:-50});
+    });
+    $(".go-patent-4").on("click", function(){
+        $(window).scrollTo($(".patent-4-wrap"), 800 , {offset:-50});
     });
 </script>
 <!--廠商製作區塊 end-->
