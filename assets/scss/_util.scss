@@ -60,6 +60,10 @@ div[data-aos="typing-vertical"]{
         .typing-vertical{
             border-bottom: 3px solid;
             border-color: transparent;
+            @media screen and (max-width: 599px){
+                border-bottom: 1px solid;
+                border-color: transparent;
+            }
             &.length-4{
                 animation: typing-vertical-4 1.5s steps(4) forwards, blink .3s step-end 4 alternate;
             }

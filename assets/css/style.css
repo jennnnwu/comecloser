@@ -91,6 +91,12 @@ div[data-aos=typing-vertical].aos-animate .typing-vertical {
   border-bottom: 3px solid;
   border-color: transparent;
 }
+@media screen and (max-width: 599px) {
+  div[data-aos=typing-vertical].aos-animate .typing-vertical {
+    border-bottom: 1px solid;
+    border-color: transparent;
+  }
+}
 div[data-aos=typing-vertical].aos-animate .typing-vertical.length-4 {
   -webkit-animation: typing-vertical-4 1.5s steps(4) forwards, blink 0.3s step-end 4 alternate;
           animation: typing-vertical-4 1.5s steps(4) forwards, blink 0.3s step-end 4 alternate;
