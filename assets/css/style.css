@@ -273,12 +273,12 @@ div[data-aos=typing-horizontal].aos-animate {
 }
 @-webkit-keyframes blink {
   50% {
-    border-color: #3E3E3E;
+    border-color: #5A99BA;
   }
 }
 @keyframes blink {
   50% {
-    border-color: #3E3E3E;
+    border-color: #5A99BA;
   }
 }
 .vControl {
