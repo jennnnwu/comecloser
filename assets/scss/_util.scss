@@ -1,0 +1,182 @@
+// container
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+// font weight
+.fw-light{
+    font-weight: 300!important;
+}
+.fw-normal{
+    font-weight: 400!important;
+}
+.fw-medium{
+    font-weight: 500!important;
+}
+.fw-bold{
+    font-weight: 700!important;
+}
+
+// text color
+.text-blue{
+    color: $blue-1!important;
+}
+
+//text setting
+.text-vertical{
+    writing-mode: vertical-rl;
+}
+.round-text-tag{
+    border-radius: 8px;
+    padding: 2px 8px;
+}
+
+//block color
+.bg-blue{
+    background-color: $blue-1!important;
+}
+
+//flex
+.d-flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-fstart{
+    align-items: flex-start;
+}
+div[data-aos="typing-vertical"]{
+    .typing-vertical{
+        white-space: nowrap;
+        overflow: hidden;
+        border-bottom: 0px solid;
+        text-align: left;
+        height: 0;
+    }
+    &.aos-animate{
+        .typing-vertical{
+            border-bottom: 3px solid;
+            border-color: transparent;
+            &.length-4{
+                animation: typing-vertical-4 1.5s steps(4) forwards, blink .3s step-end 4 alternate;
+            }
+            &.length-8{
+                animation: typing-vertical-8 1.5s steps(8) forwards, blink .3s step-end 4 alternate;
+                animation-delay: 1.5s;
+            }
+            &.length-7{
+                animation: typing-vertical-7 1.5s steps(7) forwards, blink .5s step-end infinite alternate;
+                animation-delay: 3s;
+            } 
+        }
+    }
+}
+
+div[data-aos="typing-horizontal"]{
+    transform:translate3d(100px,0,0);
+    opacity:0;
+    transition-property:opacity,transform;
+    &.aos-animate{
+        opacity:1;
+        transform:translateZ(0);
+    }
+    @media screen and (min-width: 599px){
+        .typing-horizontal{
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 0px solid;
+            text-align: left;
+            width: 0;
+        }
+        &.aos-animate{
+            &.length-11{
+                animation: typing-horizontal-11 1.5s steps(11) forwards, blink .3s step-end 4 alternate;
+            }
+            &.length-20{
+                animation: typing-horizontal-20 1.5s steps(20) forwards, blink .3s step-end 4 alternate;
+                animation-delay: 1.5s;
+            }
+            &.length-13{
+                animation: typing-horizontal-13 1.5s steps(13) forwards, blink .5s step-end infinite alternate;
+                animation-delay: 3s;
+            }
+            
+            .typing-horizontal{
+                border-right: 3px solid;
+                border-color: transparent;
+                &.length-11{
+                    animation: typing-horizontal-11 1.5s steps(11) forwards, blink .3s step-end 4 alternate;
+                }
+                &.length-20{
+                    animation: typing-horizontal-20 1.5s steps(20) forwards, blink .3s step-end 4 alternate;
+                    animation-delay: 1.5s;
+                }
+                &.length-13{
+                    animation: typing-horizontal-13 1.5s steps(13) forwards, blink .5s step-end infinite alternate;
+                    animation-delay: 3s;
+                }
+            }
+            
+            
+        }
+    }
+}
+
+@keyframes typing-vertical-4 {
+    from {
+      height: 0;
+    }
+    100%{
+        height: 6em;
+    }
+}
+@keyframes typing-vertical-7 {
+    from {
+      height: 0;
+    }
+    100%{
+        height: 10.5em;
+    }
+}
+@keyframes typing-vertical-8 {
+    from {
+      height: 0;
+    }
+    100%{
+        height: 12em;
+    }
+}
+@keyframes typing-horizontal-11 {
+    from {
+        width: 0;
+    }
+    100%{
+        width: 11em;
+    }
+}
+@keyframes typing-horizontal-20 {
+    from {
+        width: 0;
+    }
+    100%{
+        width: 20em;
+    }
+}
+@keyframes typing-horizontal-13 {
+    from {
+        width: 0;
+    }
+    100%{
+        width: 13em;
+    }
+}
+
+      
+  @keyframes blink {
+    50% {
+      border-color: $gray-1;
+    }
+}

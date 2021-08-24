@@ -1,0 +1,550 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import "variable";
+@import "base";
+@import "util";
+@import "component";
+@import "cusowl";
+
+.top-wrap{
+    position: relative;
+    &::after{
+        content: '';
+        width: 40%;
+        height: 60%;
+        background-color: $blue-3;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        @media screen and (max-width: 599px){
+            height: 48%;
+            width: 36%;
+        }
+    }
+    .kv{
+        margin-bottom: 80px;
+        position: relative;
+        text-indent: -9999px;
+        color: transparent;
+        @media screen and (max-width: 599px){
+            display: none;
+        }
+        .kv-font{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+    }
+    .kv-mobile{
+        display: none;
+        @media screen and (max-width: 599px){
+            display: block;
+            margin-bottom: 38px;
+        }
+        .kv-font{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+.video-section{
+    @media screen and (max-width: 599px){
+        text-align: right;
+    }
+    .title-border{
+        position: relative;
+        @media screen and (max-width: 599px){
+            margin-right: 18px;
+        }
+    }
+}
+.video-section-wrap{
+    display: flex;
+    width: 100%;
+    margin-top: 96px;
+    margin-bottom: 96px;
+    @media screen and (max-width: 599px){
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .video-section-start{
+        width: 30%;
+        .text-wrap{
+            font-size: 21px;
+            flex-direction:row-reverse;
+            letter-spacing: .5em;
+            margin-right: 70px;
+            margin-top: 10px;
+            height: 12em;
+            @media screen and (max-width: 599px){
+                font-size: 12px;
+                margin-right: 0;
+            }
+            p{
+                margin: 0;
+                line-height: 2;
+            }
+        }
+        img{
+            position: relative;
+            margin-top: 130px;
+            @media screen and (max-width: 599px){
+                margin-top: 20px;
+            }
+        }
+    }
+    .video-section-end{
+        width: 70%;
+        margin-left: 55px;
+        @media screen and (max-width: 599px){
+            padding-top: 30px;
+            margin-left: 20px;
+        }
+    }
+    .video{
+        background-image: url(../images/video_cover.jpg);
+        background-size: cover;
+        width: 100%;
+        padding-bottom: 67.0033%;
+        position: relative;
+    }
+}
+.talk-section{
+    background-image: url(../images/talk_bubble_bg.png);
+    background-size: cover;
+    background-position: left 50px;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 599px){
+        background-position: left 25px;
+    }
+    .talk-bubbles{
+        padding-top: 70px;
+        padding-bottom: 52px;
+        @media screen and (max-width: 599px){
+            display: none;
+        }
+        li{
+            position: relative;
+        }
+        .bubble-1{
+            left: -10%;
+        }
+        .bubble-2{
+            left: 20%;
+            margin-top: -20px;
+        }
+        .bubble-3{
+            left: -15%;
+            margin-top: -40px;
+        }
+        .bubble-4{
+            left: 7%;
+            margin-top: 15px;
+        }
+    }
+    .talk-bubbles-mobile{
+        display: none;
+        padding-top: 50px;
+        padding-bottom: 90px;
+        @media screen and (max-width: 599px){
+            display: block;
+        }
+        li{
+            position: relative;
+        }
+        .bubble-1{
+            left: -16%;
+        }
+        .bubble-2{
+            left: 20%;
+            margin-top: 20px;
+        }
+        .bubble-3{
+            left: -15%;
+            // margin-top: -40px;
+        }
+        .bubble-4{
+            left: 7%;
+            margin-top: 35px;
+        }
+    }
+}
+.patent-wrap{
+    padding-top: 72px;
+    padding-bottom: 43px;
+    background-image: url(../images/patent_slider_bg.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    @media screen and (max-width: 599px){
+        background-image: url(../images/m/patent_slider_bg.png);
+        background-size: cover;
+        padding-bottom: 13px;
+    }
+    .container{
+        max-width: 820px;
+    }
+    .title-wings{
+        margin-bottom: 18px;
+        @media screen and (max-width: 599px){
+            margin-bottom: 5px;
+        }
+    }
+    .title-xl{
+        margin-bottom: 45px;
+    }
+}
+.patent-slider-wrap{
+    display: flex;
+    position: relative;
+    align-items: center;
+    @media screen and (max-width: 599px){
+        flex-direction: column;
+    }
+    .patent-nav-wrap{
+        width: 35%;
+        @media screen and (max-width: 599px){
+            display: flex;
+            flex: 1;
+            width: 100%;
+            overflow-x: auto;
+        }
+    }
+    .patent-nav{
+        @media screen and (max-width: 599px){
+            position: relative;
+            display: flex;
+            width: auto;
+            margin-left: 30px;
+        }
+    }
+    .patent-nav-item{
+        @media screen and (max-width: 599px){
+            margin-right: 30px;
+            width: 200px;
+        }
+    }
+}
+.patent-slider-list{
+    width: 65%;
+    @media screen and (max-width: 599px){
+        width: 100%;
+        padding: 0 38px 0 30px;
+    }
+    .owl-dots{
+        text-align: right;
+        margin-top: 42px!important;
+        margin-right: 54px;
+        @media screen and (max-width: 599px){
+            text-align: left;
+            margin-right: 0;
+            margin-top: 35px!important;
+        }
+    }
+    .owl-dots .owl-dot span{
+        border: 1px solid #fff;
+    }
+    .owl-dots .owl-dot.active span,
+    .owl-dots .owl-dot:hover span{
+        background: $gray-2;
+    }
+}
+.patent-content{
+    padding-top: 110px;
+    padding-bottom: 50px;
+    @media screen and (max-width: 599px){
+        padding-bottom: 12px;
+        padding-top: 80px;
+    }
+}
+.patent-1-wrap{
+    background-image: url(../images/patent1_bg.png);
+    background-size: auto;
+    background-position: right 0 bottom 0;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 599px){
+        background-image: url(../images/m/patent1_bg.png);
+    }
+}
+.patent-2-wrap{
+    background-image: url(../images/patent2_bg.png);
+    background-size: auto;
+    background-position: left 0 bottom 0;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    @media screen and (max-width: 599px){
+        background-image: url(../images/m/patent2_bg.png);
+    }
+    .btn-wrap{
+        padding-right: 205px;
+        @media screen and (max-width: 599px){
+            padding-right: 38px;
+        }
+    }
+}
+.patent-3-wrap{
+    background-image: url(../images/patent3_bg.png);
+    background-size: auto;
+    background-position: right 0 bottom 0;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 599px){
+        background-image: url(../images/m/patent3_bg.png);
+        margin-bottom: 12px;
+    }
+    .btn-wrap{
+        padding-left: 54px;
+        @media screen and (max-width: 599px){
+            padding-left: 38px;
+        }
+    }
+    .model-slider-wrap{
+        margin-bottom: 100px;
+        @media screen and (max-width: 599px){
+            margin-bottom: 20px;
+        }
+    }
+    .feature-slider-wrap{
+        margin-bottom: 110px;
+        @media screen and (max-width: 599px){
+            margin-bottom: 45px;
+        }
+    }
+    .model-slider-list .owl-dots{
+        left: 47px;
+        right: auto;
+    }
+}
+.patent-4-wrap{
+    background-image: url(../images/patent4_bg.png);
+    background-size: auto;
+    background-position: left 0 bottom 0;
+    background-repeat: no-repeat;
+    margin-bottom: 130px;
+    @media screen and (max-width: 599px){
+        background-image: url(../images/m/patent4_bg.png);
+        margin-bottom: 84px;
+    }
+    .btn-wrap{
+        padding-right: 205px;
+        @media screen and (max-width: 599px){
+            padding-right: 38px;
+        }
+    }
+    .model-slider-list .owl-dots{
+        left: 47px;
+        right: auto;
+    }
+}
+.sandy-says{
+    padding-top: 104px;
+    background-image: url(../images/sandy_says_bg.png);
+    background-size: auto;
+    background-position: right 0 top 0;
+    background-repeat: no-repeat;
+    margin-bottom: 400px;
+    @media screen and (max-width: 599px){
+        background-image: url(../images/m/sandy_says_bg.png);
+        background-position: right 20px top 0;
+        margin-bottom: 60px;
+        padding-top: 35px;
+    }
+    .sandy-says-img,
+    .sandy-says-sign{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        @media screen and (max-width: 599px){
+            display: none;
+        }
+    }
+    .sandy-says-sign{
+        z-index: 1;
+    }
+    .sandy-says-img-mobile,
+    .sandy-says-sign-mobile{
+        display: none;
+        @media screen and (max-width: 599px){
+            display: block;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+        }
+    }
+    .sandy-says-sign-mobile{
+        z-index: 1;
+    }
+    .container{
+        position: relative;
+        max-width: 970px;
+        height: 800px;
+        // background-image: url(../images/sandy_says_bg.png);
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        padding-left: 96px;
+        text-align: left;
+        @media screen and (max-width: 599px) {
+            margin: 0 30px 0 15px;
+            padding-left: 40px;
+            height: 330px;
+            background-size: 120% auto;
+            background-position: top 0% center;
+        }
+    }
+    .deco1{
+        position: absolute;
+        left: -118px;
+        bottom: -118px;
+        z-index: -2;
+        @media screen and (max-width: 599px){
+            width: 108px;
+            left: -15px;
+            bottom: -28px;
+        }
+    }
+    .deco2{
+        position: absolute;
+        bottom: -188px;
+        right: 26px;
+        @media screen and (max-width: 599px){
+            width: 42px;
+            right: 15px;
+            bottom: -66px;
+        }
+    }
+    .title-border{
+        margin-bottom: 54px;
+        position: relative;
+        z-index: 3;
+        @media screen and (max-width: 599px){
+            margin-bottom: 25px;
+            // top: -30px;
+        }
+    }
+    .text-wrap{
+        position: relative;
+        text-align: left;
+        font-size: 21px;
+        z-index: 2;
+        @media screen and (max-width: 599px) {
+            font-size: 12px;
+        }
+        p{
+            margin: 1rem 0;
+            @media screen and (max-width: 599px) {
+                margin: 0;
+                max-width: 160px;
+                line-height: 1.8;
+            }
+        }
+    }
+}
+.model-img{
+    position: relative;
+    &:before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: cover;
+    } 
+}
+.model-1{
+    &:before{
+        background-image: url(../images/patent_01/text.svg);
+    }
+    @media screen and (max-width: 599px){
+        &:before{
+            background-image: url(../images/m/patent_01/text.svg);
+        }
+    }
+}
+.model-1-1{
+    background-image: url(../images/patent_01/model1.png);
+    @media screen and (max-width: 599px){
+        background-image: url(../images/m/patent_01/model1.png);
+    }
+}
+.model-1-2{
+    background-image: url(../images/patent_01/model2.png);
+    @media screen and (max-width: 599px){
+        background-image: url(../images/m/patent_01/model2.png);
+    }
+}
+
+.model-2{
+    &:before{
+        background-image: url(../images/patent_02/text.svg);
+    }
+    @media screen and (max-width: 599px){
+        &:before{
+            background-image: url(../images/m/patent_02/text.svg);
+        }
+    }
+}
+.model-2-1{
+    background-image: url(../images/patent_02/model1.png);
+    @media screen and (max-width: 599px){
+        background-image: url(../images/m/patent_02/model1.png);
+    }
+}
+.model-2-2{
+    background-image: url(../images/patent_02/model2.png);
+    @media screen and (max-width: 599px){
+        background-image: url(../images/m/patent_02/model2.png);
+    }
+}
+
+.model-3{
+    &:before{
+        background-image: url(../images/patent_03/text.svg);
+    }
+    @media screen and (max-width: 599px){
+        &:before{
+            background-image: url(../images/m/patent_03/text.svg);
+        }
+    }
+}
+.model-3-1{
+    background-image: url(../images/patent_03/model1.png);
+    @media screen and (max-width: 599px){
+        background-image: url(../images/m/patent_03/model1.png);
+    }
+}
+.model-3-2{
+    background-image: url(../images/patent_03/model2.png);
+    @media screen and (max-width: 599px){
+        background-image: url(../images/m/patent_03/model2.png);
+    }
+}
+
+.model-4{
+    &:before{
+        background-image: url(../images/patent_04/text.svg);
+    }
+    @media screen and (max-width: 599px){
+        &:before{
+            background-image: url(../images/m/patent_04/text.svg);
+        }
+    }
+}
+.model-4-1{
+    background-image: url(../images/patent_04/model1.png);
+    @media screen and (max-width: 599px){
+        background-image: url(../images/m/patent_04/model1.png);
+    }
+}
+.model-4-2{
+    background-image: url(../images/patent_04/model2.png);
+    @media screen and (max-width: 599px){
+        background-image: url(../images/m/patent_04/model2.png);
+    }
+}
