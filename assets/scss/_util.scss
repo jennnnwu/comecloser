@@ -58,7 +58,7 @@ div[data-aos="typing-vertical"]{
     }
     &.aos-animate{
         .typing-vertical{
-            border-bottom: 3px solid;
+            border-bottom: 2px solid;
             border-color: transparent;
             @media screen and (max-width: 599px){
                 border-bottom: 1px solid;
@@ -97,7 +97,7 @@ div[data-aos="typing-vertical"]{
         }
         &.aos-animate{
             .typing-horizontal{
-                border-right: 3px solid;
+                border-right: 2px solid;
                 border-color: transparent;
                 &.text-l1{
                     animation: typing-horizontal-11 1.5s steps(11) forwards, blink .3s step-end 4 alternate;
@@ -134,7 +134,7 @@ div[data-aos="typing-vertical"]{
     }
     &.aos-animate{
         .typing-horizontal{
-            border-right: 1px solid;
+            border-right: 2px solid;
             border-color: transparent;
             &.text-l1{
                 animation: typing-horizontal-11 1.5s steps(11) forwards, blink .3s step-end 4 alternate;
@@ -184,7 +184,7 @@ div[data-aos="typing-vertical"]{
         width: 0;
     }
     100%{
-        width: calc(9em + 3px);
+        width: calc(9em + 2px);
     }
 }
 @keyframes typing-horizontal-11 {
@@ -192,7 +192,7 @@ div[data-aos="typing-vertical"]{
         width: 0;
     }
     100%{
-        width: calc(11em + 3px);
+        width: calc(11em + 2px);
     }
 }
 @keyframes typing-horizontal-12 {
@@ -200,7 +200,7 @@ div[data-aos="typing-vertical"]{
         width: 0;
     }
     100%{
-        width: calc(12em + 3px);
+        width: calc(12em + 2px);
     }
 }
 
@@ -209,7 +209,7 @@ div[data-aos="typing-vertical"]{
         width: 0;
     }
     100%{
-        width: calc(13em + 3px);
+        width: calc(13em + 2px);
     }
 }
 @keyframes typing-horizontal-20 {
@@ -217,7 +217,7 @@ div[data-aos="typing-vertical"]{
         width: 0;
     }
     100%{
-        width: calc(20em + 3px);
+        width: calc(20em + 2px);
     }
 }
 
