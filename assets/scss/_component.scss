@@ -144,6 +144,9 @@
     .subtitle-patent{
         font-size: 26px;
         margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         @media screen and (max-width: 599px){
             font-size: 16px;
             margin-bottom: 25px;
@@ -286,5 +289,20 @@
         .round-text-tag{
             background-color: $blue-2;
         }
+    }
+}
+
+.icon-thumb{
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    background-image: url(../images/thumb.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    @media screen and (max-width: 599px){
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
     }
 }

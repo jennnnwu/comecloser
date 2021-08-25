@@ -114,7 +114,7 @@ div[data-aos=typing-vertical].aos-animate .typing-vertical.length-7 {
           animation-delay: 3s;
 }
 
-div[data-aos=typing-horizontal] {
+.text-wrap[data-aos=typing-horizontal] {
   -webkit-transform: translate3d(-100px, 0, 0);
           transform: translate3d(-100px, 0, 0);
   opacity: 0;
@@ -123,55 +123,89 @@ div[data-aos=typing-horizontal] {
   transition-property: opacity, transform;
   transition-property: opacity, transform, -webkit-transform;
 }
-div[data-aos=typing-horizontal].aos-animate {
+.text-wrap[data-aos=typing-horizontal].aos-animate {
   opacity: 1;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
 @media screen and (min-width: 599px) {
-  div[data-aos=typing-horizontal] .typing-horizontal {
+  .text-wrap[data-aos=typing-horizontal] .typing-horizontal {
     white-space: nowrap;
     overflow: hidden;
     border-right: 0px solid;
     text-align: left;
     width: 0;
   }
-  div[data-aos=typing-horizontal].aos-animate.length-11 {
-    -webkit-animation: typing-horizontal-11 1.5s steps(11) forwards, blink 0.3s step-end 4 alternate;
-            animation: typing-horizontal-11 1.5s steps(11) forwards, blink 0.3s step-end 4 alternate;
-  }
-  div[data-aos=typing-horizontal].aos-animate.length-20 {
-    -webkit-animation: typing-horizontal-20 1.5s steps(20) forwards, blink 0.3s step-end 4 alternate;
-            animation: typing-horizontal-20 1.5s steps(20) forwards, blink 0.3s step-end 4 alternate;
-    -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s;
-  }
-  div[data-aos=typing-horizontal].aos-animate.length-13 {
-    -webkit-animation: typing-horizontal-13 1.5s steps(13) forwards, blink 0.5s step-end infinite alternate;
-            animation: typing-horizontal-13 1.5s steps(13) forwards, blink 0.5s step-end infinite alternate;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
-  }
-  div[data-aos=typing-horizontal].aos-animate .typing-horizontal {
+  .text-wrap[data-aos=typing-horizontal].aos-animate .typing-horizontal {
     border-right: 3px solid;
     border-color: transparent;
   }
-  div[data-aos=typing-horizontal].aos-animate .typing-horizontal.length-11 {
+  .text-wrap[data-aos=typing-horizontal].aos-animate .typing-horizontal.text-l1 {
     -webkit-animation: typing-horizontal-11 1.5s steps(11) forwards, blink 0.3s step-end 4 alternate;
             animation: typing-horizontal-11 1.5s steps(11) forwards, blink 0.3s step-end 4 alternate;
   }
-  div[data-aos=typing-horizontal].aos-animate .typing-horizontal.length-20 {
+  .text-wrap[data-aos=typing-horizontal].aos-animate .typing-horizontal.text-l2 {
     -webkit-animation: typing-horizontal-20 1.5s steps(20) forwards, blink 0.3s step-end 4 alternate;
             animation: typing-horizontal-20 1.5s steps(20) forwards, blink 0.3s step-end 4 alternate;
     -webkit-animation-delay: 1.5s;
             animation-delay: 1.5s;
   }
-  div[data-aos=typing-horizontal].aos-animate .typing-horizontal.length-13 {
+  .text-wrap[data-aos=typing-horizontal].aos-animate .typing-horizontal.text-l3 {
     -webkit-animation: typing-horizontal-13 1.5s steps(13) forwards, blink 0.5s step-end infinite alternate;
             animation: typing-horizontal-13 1.5s steps(13) forwards, blink 0.5s step-end infinite alternate;
     -webkit-animation-delay: 3s;
             animation-delay: 3s;
   }
+}
+
+.text-wrap-mobile[data-aos=typing-horizontal] {
+  -webkit-transform: translate3d(-100px, 0, 0);
+          transform: translate3d(-100px, 0, 0);
+  opacity: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  z-index: 5;
+  position: relative;
+}
+.text-wrap-mobile[data-aos=typing-horizontal].aos-animate {
+  opacity: 1;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.text-wrap-mobile[data-aos=typing-horizontal] .typing-horizontal {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0px solid;
+  text-align: left;
+  width: 0;
+}
+.text-wrap-mobile[data-aos=typing-horizontal].aos-animate .typing-horizontal {
+  border-right: 1px solid;
+  border-color: transparent;
+}
+.text-wrap-mobile[data-aos=typing-horizontal].aos-animate .typing-horizontal.text-l1 {
+  -webkit-animation: typing-horizontal-11 1.5s steps(11) forwards, blink 0.3s step-end 4 alternate;
+          animation: typing-horizontal-11 1.5s steps(11) forwards, blink 0.3s step-end 4 alternate;
+}
+.text-wrap-mobile[data-aos=typing-horizontal].aos-animate .typing-horizontal.text-l2 {
+  -webkit-animation: typing-horizontal-12 1.5s steps(12) forwards, blink 0.3s step-end 4 alternate;
+          animation: typing-horizontal-12 1.5s steps(12) forwards, blink 0.3s step-end 4 alternate;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.text-wrap-mobile[data-aos=typing-horizontal].aos-animate .typing-horizontal.text-l3 {
+  -webkit-animation: typing-horizontal-12 1.5s steps(12) forwards, blink 0.3s step-end 4 alternate;
+          animation: typing-horizontal-12 1.5s steps(12) forwards, blink 0.3s step-end 4 alternate;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.text-wrap-mobile[data-aos=typing-horizontal].aos-animate .typing-horizontal.text-l4 {
+  -webkit-animation: typing-horizontal-9 1.5s steps(9) forwards, blink 0.3s step-end infinite alternate;
+          animation: typing-horizontal-9 1.5s steps(9) forwards, blink 0.3s step-end infinite alternate;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
 }
 
 @-webkit-keyframes typing-vertical-4 {
@@ -223,12 +257,28 @@ div[data-aos=typing-horizontal].aos-animate {
     height: 12em;
   }
 }
+@-webkit-keyframes typing-horizontal-9 {
+  from {
+    width: 0;
+  }
+  100% {
+    width: calc(9em + 3px);
+  }
+}
+@keyframes typing-horizontal-9 {
+  from {
+    width: 0;
+  }
+  100% {
+    width: calc(9em + 3px);
+  }
+}
 @-webkit-keyframes typing-horizontal-11 {
   from {
     width: 0;
   }
   100% {
-    width: 11em;
+    width: calc(11em + 3px);
   }
 }
 @keyframes typing-horizontal-11 {
@@ -236,23 +286,23 @@ div[data-aos=typing-horizontal].aos-animate {
     width: 0;
   }
   100% {
-    width: 11em;
+    width: calc(11em + 3px);
   }
 }
-@-webkit-keyframes typing-horizontal-20 {
+@-webkit-keyframes typing-horizontal-12 {
   from {
     width: 0;
   }
   100% {
-    width: 20em;
+    width: calc(12em + 3px);
   }
 }
-@keyframes typing-horizontal-20 {
+@keyframes typing-horizontal-12 {
   from {
     width: 0;
   }
   100% {
-    width: 20em;
+    width: calc(12em + 3px);
   }
 }
 @-webkit-keyframes typing-horizontal-13 {
@@ -260,7 +310,7 @@ div[data-aos=typing-horizontal].aos-animate {
     width: 0;
   }
   100% {
-    width: 13em;
+    width: calc(13em + 3px);
   }
 }
 @keyframes typing-horizontal-13 {
@@ -268,7 +318,23 @@ div[data-aos=typing-horizontal].aos-animate {
     width: 0;
   }
   100% {
-    width: 13em;
+    width: calc(13em + 3px);
+  }
+}
+@-webkit-keyframes typing-horizontal-20 {
+  from {
+    width: 0;
+  }
+  100% {
+    width: calc(20em + 3px);
+  }
+}
+@keyframes typing-horizontal-20 {
+  from {
+    width: 0;
+  }
+  100% {
+    width: calc(20em + 3px);
   }
 }
 @-webkit-keyframes blink {
@@ -459,6 +525,15 @@ div[data-aos=typing-horizontal].aos-animate {
 .page-comecloser .subtitle-patent {
   font-size: 26px;
   margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 599px) {
   .page-comecloser .subtitle-patent {
@@ -629,6 +704,23 @@ div[data-aos=typing-horizontal].aos-animate {
   background-color: #96C6DF;
 }
 
+.icon-thumb {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  background-image: url(../images/thumb.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+@media screen and (max-width: 599px) {
+  .icon-thumb {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+}
+
 .owl-theme .owl-dots .owl-dot span {
   width: 23px;
   height: 23px;
@@ -773,7 +865,14 @@ div[data-aos=typing-horizontal].aos-animate {
   }
 }
 .video-section-wrap .video-section-start {
-  width: 30%;
+  width: 23%;
+  margin-left: 55px;
+}
+@media screen and (max-width: 599px) {
+  .video-section-wrap .video-section-start {
+    width: 25%;
+    margin-left: 18px;
+  }
 }
 .video-section-wrap .video-section-start .text-wrap {
   font-size: 21px;
@@ -806,13 +905,15 @@ div[data-aos=typing-horizontal].aos-animate {
   }
 }
 .video-section-wrap .video-section-end {
-  width: 70%;
+  width: 77%;
   margin-left: 55px;
+  max-width: 890px;
 }
 @media screen and (max-width: 599px) {
   .video-section-wrap .video-section-end {
     padding-top: 30px;
-    margin-left: 20px;
+    margin-left: 18px;
+    width: 75%;
   }
 }
 .video-section-wrap .video {
@@ -832,6 +933,11 @@ div[data-aos=typing-horizontal].aos-animate {
 @media screen and (max-width: 599px) {
   .talk-section {
     background-position: left 25px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .talk-section .title-border {
+    margin-left: 13%;
   }
 }
 .talk-section .talk-bubbles {
@@ -995,6 +1101,18 @@ div[data-aos=typing-horizontal].aos-animate {
 .patent-slider-list .owl-dots .owl-dot.active span,
 .patent-slider-list .owl-dots .owl-dot:hover span {
   background: #C4C4C4;
+}
+@media screen and (max-width: 599px) {
+  .patent-slider-list .owl-dots .owl-dot:hover span {
+    background: #fff;
+    border: 1px solid #fff;
+  }
+}
+@media screen and (max-width: 599px) {
+  .patent-slider-list .owl-dots .owl-dot.active span {
+    border: 1px solid #fff;
+    background: #C4C4C4;
+  }
 }
 
 .patent-content {
@@ -1215,10 +1333,11 @@ div[data-aos=typing-horizontal].aos-animate {
   text-align: left;
   font-size: 21px;
   z-index: 2;
+  color: #3E3E3E;
 }
 @media screen and (max-width: 599px) {
   .sandy-says .text-wrap {
-    font-size: 12px;
+    display: none;
   }
 }
 .sandy-says .text-wrap p {
@@ -1230,6 +1349,20 @@ div[data-aos=typing-horizontal].aos-animate {
     max-width: 160px;
     line-height: 1.8;
   }
+}
+.sandy-says .text-wrap-mobile {
+  display: none;
+  color: #3E3E3E;
+}
+@media screen and (max-width: 599px) {
+  .sandy-says .text-wrap-mobile {
+    font-size: 12px;
+    display: block;
+  }
+}
+.sandy-says .text-wrap-mobile p {
+  margin: 0;
+  line-height: 1.8;
 }
 
 .model-img {

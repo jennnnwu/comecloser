@@ -71,7 +71,12 @@
         margin-bottom: 15px;
     }
     .video-section-start{
-        width: 30%;
+        width: 23%;
+        margin-left: 55px;
+        @media screen and (max-width: 599px){
+            width: 25%;
+            margin-left: 18px;
+        }
         .text-wrap{
             font-size: 21px;
             flex-direction:row-reverse;
@@ -97,11 +102,13 @@
         }
     }
     .video-section-end{
-        width: 70%;
+        width: 77%;
         margin-left: 55px;
+        max-width: 890px;
         @media screen and (max-width: 599px){
             padding-top: 30px;
-            margin-left: 20px;
+            margin-left: 18px;
+            width: 75%;
         }
     }
     .video{
@@ -119,6 +126,11 @@
     background-repeat: no-repeat;
     @media screen and (max-width: 599px){
         background-position: left 25px;
+    }
+    .title-border{
+        @media screen and (max-width: 599px){
+            margin-left: 13%;
+        }
     }
     .talk-bubbles{
         padding-top: 70px;
@@ -251,6 +263,19 @@
     .owl-dots .owl-dot:hover span{
         background: $gray-2;
     }
+    .owl-dots .owl-dot:hover span{
+        @media screen and (max-width: 599px){
+            background: #fff;
+            border: 1px solid #fff;
+        }
+    }
+    .owl-dots .owl-dot.active span{
+        @media screen and (max-width: 599px){
+            border: 1px solid #fff;
+            background: $gray-2;
+        }
+    }
+    
 }
 .patent-content{
     padding-top: 110px;
@@ -432,8 +457,9 @@
         text-align: left;
         font-size: 21px;
         z-index: 2;
+        color: $gray-1;
         @media screen and (max-width: 599px) {
-            font-size: 12px;
+            display: none;
         }
         p{
             margin: 1rem 0;
@@ -442,6 +468,18 @@
                 max-width: 160px;
                 line-height: 1.8;
             }
+        }
+    }
+    .text-wrap-mobile{
+        display: none;
+        color: $gray-1;
+        @media screen and (max-width: 599px){
+            font-size: 12px;
+            display: block;
+        }
+        p{
+            margin: 0;
+            line-height: 1.8;
         }
     }
 }
